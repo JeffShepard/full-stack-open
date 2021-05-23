@@ -23,7 +23,6 @@ const App = () => {
   let ary = new Uint8Array(anecdotes.length)
   const [selected, setSelected] = useState(0)
   const [votes,setVotes] = useState(ary)
-  // const [maxVotes,setMaxVotes] = useState(0)
 
   const randomAnec = () => {
     let num = anecdotes.length
@@ -40,7 +39,6 @@ const App = () => {
   let max = Math.max(...votes)
   let pinnedInd = votes.findIndex(x => x===max)
   let pinnedAnec = anecdotes[pinnedInd]
-  console.log(max,votes,pinnedInd)
 
   return (
     <div>
@@ -51,7 +49,6 @@ const App = () => {
       <Button clickHandle={addVote} text='Vote' />
     <h1>Anecdote with the most votes</h1>
     <MostVotesAnec pinnedAnec={pinnedAnec} max={max} />
-
     </div>
   )
 }
