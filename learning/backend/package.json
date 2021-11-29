@@ -15,7 +15,7 @@
     "lodash.isempty": "^4.4.0"
   },
   "devDependencies": {
-    "@types/lodash.isempty": "^4.4.6",
+    "@types/lodash.isempty": "4.4.6",
     "nodemon": "2.0.15"
   }
 }
