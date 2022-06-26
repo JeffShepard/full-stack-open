@@ -1,10 +1,10 @@
 import React from 'react'
-import '../style.css'
+
 
 const Notifications = ({message})=> {
     if (message) {
         return(
-        <div className='message'>{message}</div>
+        <div>{message}</div>
         )}
 
     else if (message === null) {
